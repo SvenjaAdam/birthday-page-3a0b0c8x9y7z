@@ -72,6 +72,18 @@ function Present() {
                 Von Herzen alles Liebe zum Geburtstag wünscht dir dein Favorite Jerk 🐸 <br />
             </h4>
             <h3 className="love-message">Ich Liebe Dich ❤️</h3>
+
+            {/* GitHub Repository Link */}
+            <div className="github-info">
+                <a
+                    href="https://github.com/SvenjaAdam/birthday-page-3a0b0c8x9y7z"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="github-link"
+                >
+                    📁 View on GitHub
+                </a>
+            </div>
         </div>
     );
 }
