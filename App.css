@@ -55,22 +55,22 @@
         font-size: clamp(2rem, 10vw, 3rem);
         margin: 0 0 1vh 0;
     }
-    
+
     .birthday-message {
         font-size: clamp(1.2rem, 5vw, 1.8rem);
         margin: 1vh 0 0 0;
     }
-    
+
     .love-message {
         font-size: clamp(1rem, 4vw, 1.5rem);
-        margin: 1vh 0 0 0;
+        margin: 0.5vh 0 0 0;
     }
-    
+
     .cat-gif {
         max-width: 90vw;
         max-height: 40vh;
     }
-    
+
     .present-container {
         padding: 1vh;
         justify-content: space-evenly;
@@ -89,7 +89,7 @@
 
 .love-message {
     font-size: clamp(1.2rem, 3vw, 2rem);
-    margin: 2vh 0 0 0;
+    margin: 1vh 0 0 0;
     line-height: 1.4;
     max-width: 90%;
     color: black !important;
