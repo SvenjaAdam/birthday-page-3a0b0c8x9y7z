@@ -9,6 +9,9 @@ dist/
 build/
 .vite/
 
+# Keep public folder for assets
+!public/
+
 # Environment variables
 .env
 .env.local

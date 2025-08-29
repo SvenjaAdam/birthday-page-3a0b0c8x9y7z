@@ -67,6 +67,10 @@ function Present() {
                 initial={{ scale: 0 }}
                 animate={{ scale: 1 }}
                 transition={{ delay: 0, duration: 0.8 }}
+                onError={(e) => {
+                    console.log('GIF failed to load, trying alternative path');
+                    e.target.src = 'GIF-Bild.gif';
+                }}
             />
 
             <h4 className="birthday-message">
