@@ -45,17 +45,7 @@ export default function App() {
 
                     </motion.button>
 
-                    {/* GitHub Repository Link - immer sichtbar */}
-                    <div className="github-info">
-                        <a
-                            href="https://github.com/SvenjaAdam/birthday-page-3a0b0c8x9y7z"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="github-link"
-                        >
-                            📁 View on GitHub
-                        </a>
-                    </div>
+
                 </>
             ) : (
                 <Present />
@@ -71,7 +61,7 @@ function Present() {
             <h4 className="birthday-title">Happy Birthday!</h4>
 
             <motion.img
-                src={'GIF-Bild.gif'}
+                src={'/birthday-page-3a0b0c8x9y7z/GIF-Bild.gif'}
                 className="cat-gif"
                 alt="Birthday Cat GIF"
                 initial={{ scale: 0 }}
