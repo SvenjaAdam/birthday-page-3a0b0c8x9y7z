@@ -17,6 +17,7 @@
     background: #d0ecf5;
     color: black;
     font-family: Cambria, 'Times New Roman', serif;
+    overflow: hidden;
 }
 
 
@@ -28,38 +29,72 @@
     height: 100vh;
     padding: 2vh;
     box-sizing: border-box;
+    overflow: hidden;
 }
 
 .birthday-title {
-    font-size: clamp(4rem, 5vw, 4rem);
-    margin: 0 0 3vh 0;
+    font-size: clamp(2.5rem, 8vw, 4rem);
+    margin: 0 0 2vh 0;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
     font-family: Cambria, 'Times New Roman', serif;
+    text-align: center;
+    line-height: 1.1;
 }
 
 .cat-gif {
-    max-width: min(60vw, 400px);
-    max-height: min(60vh, 400px);
-    margin: 0.5vh 0;
+    max-width: min(80vw, 400px);
+    max-height: min(50vh, 400px);
+    margin: 1vh 0;
     border-radius: 15px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 
+/* Mobile responsive adjustments */
+@media (max-width: 768px) {
+    .birthday-title {
+        font-size: clamp(2rem, 10vw, 3rem);
+        margin: 0 0 1vh 0;
+    }
+    
+    .birthday-message {
+        font-size: clamp(1.2rem, 5vw, 1.8rem);
+        margin: 1vh 0 0 0;
+    }
+    
+    .love-message {
+        font-size: clamp(1rem, 4vw, 1.5rem);
+        margin: 1vh 0 0 0;
+    }
+    
+    .cat-gif {
+        max-width: 90vw;
+        max-height: 40vh;
+    }
+    
+    .present-container {
+        padding: 1vh;
+        justify-content: space-evenly;
+    }
+}
+
 .birthday-message {
-    font-size: clamp(2rem, 3vw, 2rem);
+    font-size: clamp(1.5rem, 4vw, 2rem);
     margin: 2vh 0 0 0;
     line-height: 1.4;
     max-width: 90%;
     font-family: Cambria, 'Times New Roman', serif;
+    text-align: center;
+    color: black;
 }
 
 .love-message {
-    font-size: clamp(1rem, 2vw, 2rem);
+    font-size: clamp(1.2rem, 3vw, 2rem);
     margin: 2vh 0 0 0;
     line-height: 1.4;
     max-width: 90%;
     color: black !important;
     font-family: Cambria, 'Times New Roman', serif;
+    text-align: center;
 }
 
 .github-info {
